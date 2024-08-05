@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inciando estudos DOM</title>
+    <style>
+        body{
+            background: blueviolet;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique Aqui</div>
+    <script>
+        /* Selecionando ELEMENTOS por Marca
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)*/
+
+        /* Selecionando ELEMENTOS por ID
+        var corpo = window.document.body
+        var d = window.document.getElementById('msg')
+        d.style.background = 'black' */
+
+        /* Selecionando ELEMENTOS por Nome
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'ola mundo' */
+
+        /*Selecionando ELEMENTOS por CLASSE
+        var d = window.document.getElementsByClassName('msg')[0]
+        d.innerText = 'ola mundo' */
+        
+        //Selecionando ELEMENTOS por SELETOR
+        var corpo = window.document.body
+        var d = window.document.querySelector('div.msg')
+        
+        
+    </script>
+</body>
+</html>
